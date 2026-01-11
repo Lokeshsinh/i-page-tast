@@ -5,6 +5,7 @@ const turf = require('@turf/turf'); // For area calculation on server-side
 const proj4 = require('proj4'); 
 const mongoose  =  require("mongoose")
 const SitePolygon = require('./models/SitePolygon');
+const serverless = require("serverless-http");
 
 const app =  express()
 
@@ -381,3 +382,5 @@ app.listen(PROT, () => {
         console.log("Mongoose disconnected")
     })
 })
+
+module.exports.handler = serverless(app);

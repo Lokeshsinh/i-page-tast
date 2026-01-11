@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 import { toast } from 'sonner';
 import './MapInterface.css';
 
-const API_BASE_URL = 'http://localhost:4000';
+const API_BASE_URL = '/api';
 const TENANT_ID = 'tenant_1';
 
 const EPOCH_A_CONFIG = {
