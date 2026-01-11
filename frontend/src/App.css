@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #111827;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #374151;
+  color: white;
+}
+
+.sidebar button.active {
+  background: #2563eb;
+}
+
+.hint {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #9ca3af;
+}
+
+.map {
+  flex: 1;
+}
+
+.popup {
+  background: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
